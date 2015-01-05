@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div>
+		<img src="https://i.imgur.com/KPLWNN0.gif" 
+		style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+		<div class="about-button" style="margin-top: 47%; margin-left: 79.5%;">
+			<%= link_to about_path do %>
+				<%= image_tag 'down-arrow.gif' %>
+			<% end %>
+		</div>
+
+		<!-- <img src="http://i.imgur.com/oiO5zYL.gif" class="about-button"style="margin-top: 47%; margin-left: 79.5%;"></a> -->
+	</div>
+
+<%= yield %>
+
+</body>
+</html>

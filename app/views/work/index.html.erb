@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'work', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div>
+		<div>
+
+			<div class="work-examples">
+				<div class="wrapper3">
+					
+					<a href="https://cutesy.herokuapp.com"><img id="slide3" src="https://i.imgur.com/FtdSmmY.png"/></a>
+					
+					<center><h1 style="margin-top: 12%; color: white; font-family: 'Lato', sans-serif;">Cutesy</h1></center> 
+					
+					<center><p style="font-family: 'Lato', sans-serif; color: white;">Compete with friends to see who has the cutest pet!</p></center> 
+
+				</div>
+				<div class="wrapper2">
+					
+					<a href="https://journey3.herokuapp.com/"><img id="slide2" src="https://i.imgur.com/yNw9mAa.png"/></a>
+					
+					<center><h1 style="margin-top: 12%; color: white; font-family: 'Lato', sans-serif;">Journey</h1>	</center> 
+					
+					<center><p style="font-family: 'Lato', sans-serif; color: white;">A personalized fitness tracker for all of your workouts</p></center> 
+
+				</div>
+
+				<div class="wrapper1">
+
+					<a href="https://ttt-matt.firebaseapp.com/"><img id="slide1" src="https://i.imgur.com/OcHq7TC.png"/></a>
+
+					<center><h1 style="margin-top: 12%; color: white; font-family: 'Lato', sans-serif;">Tic-Tac-Toe</h1></center>
+					
+					<center><p style="font-family: 'Lato', sans-serif; color: white;">A simple game of tic-tac-toe to play with friends</p></center>	
+
+				</div>
+
+			</div>
+		</div>
+
+				<div class="about-button" style="float:right; margin-right: 9.5%; margin-top: 48%;">
+					<%= link_to contact_path do %>
+						<%= image_tag 'down-arrow.gif' %>
+					<% end %>
+				</div> 
+
+		<img src="https://i.imgur.com/yjwTJcw.gif" 
+		style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+
+	</div>
+
+</body>
+</html>

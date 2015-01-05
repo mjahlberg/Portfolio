@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'contact', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div>
+		<div id="test">
+			<p  style="color: white; font-family: 'Lato', sans-serif";>
+				email: matthewjahlberg@gmail.com
+				<br>
+				<br>
+				phone number: (630) 205-5513
+			</p>
+		</div>
+		<div class="about-button" style="margin-left: 85.5%; margin-top: 6.5%; width: 200px;">
+			<%= link_to root_path do %>
+				<%= image_tag 'https://i.imgur.com/yxOpygq.gif' %>
+			<% end %>
+		</div>
+		<a href="https://www.linkedin.com/in/matthewahlberg/"><img src="http://i.imgur.com/SAf4wZe.gif" style= "width: 80px; margin-left: 10.9%;"/></a>
+		<a href="https://github.com/mjahlberg"><img src="http://i.imgur.com/O1sEPaA.gif" style= "width: 80px; margin-left: 18.5%;"/></a>
+		<img src="https://i.imgur.com/K5VZfTq.gif" 
+		style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+
+		<!-- <img src="http://i.imgur.com/oiO5zYL.gif" class="about-button"style="margin-top: 47%; margin-left: 79.5%;"></a> -->
+	</div>
+
+</body>
+</html>
+
+
